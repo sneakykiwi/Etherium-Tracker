@@ -81,7 +81,7 @@ def shapeshift():
 def coinstwitch(threadlogic):
     print('Coinswitch')
     url2 = "https://api.coinswitch.co/v2/coins"
-    headers2 = {'x-api-key': "Yllz4CvDVh7wz8kmzNz2a8oJ8SgpdheTa74UgqHT",'x-user-ip': "78.87.9.46"}
+    headers2 = {'x-api-key': "",'x-user-ip': "78.87.9.46"}
     coins = requests.request("GET", url2, headers=headers2)
     json_coins = json.loads(coins.text)
     coinswitchdata = open('coinstwitchdata.json', 'a')
